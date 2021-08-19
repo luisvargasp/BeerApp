@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BeerApp</string>
+    <string name="pairing_food_label">Se recomienda acompañar con :</string>
+    <string name="alcohol_percentage">Porcentaje de alcohol : </string>
+    <string name="beers_not_found">0 tragos encontrados</string>
+    <string name="ingredientes">Ingredientes</string>
+    <string name="yeast">Levadura :</string>
+    <string name="hops">Lupulos :</string>
+    <string name="malt">Malta :</string>
+</resources>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".view.BeerDetailFragment">
+
+        <ImageView
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:id="@+id/icShare"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_baseline_share_24"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivBeer"
+            android:layout_marginTop="16dp"
+            tools:src="@mipmap/ic_launcher"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            app:layout_constraintTop_toBottomOf="@id/ivBeer"
+            tools:text="Beer Title"
+
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+
+            android:id="@+id/tvDescription"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            tools:text="Beer Full description  Beer Full descriptionBeer Full descriptionBeer Full description" />
+
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/tvAlcoholPercentageLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/tvDescription"
+
+            app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+            android:text="@string/alcohol_percentage" />
+
+        <TextView
+            android:id="@+id/tvAlcoholPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            app:layout_constraintStart_toEndOf="@+id/tvAlcoholPercentageLabel"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+            tools:text="4.5%" />
+
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/tvPairingFoodLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/tvDescription"
+
+            app:layout_constraintTop_toBottomOf="@+id/tvAlcoholPercentage"
+            android:text="@string/pairing_food_label" />
+
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/tvPairingFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tvDescription"
+
+            app:layout_constraintTop_toBottomOf="@+id/tvPairingFoodLabel"
+            tools:text="carne " />
+
+        <TextView
+            android:id="@+id/tvIngredients"
+            app:layout_constraintTop_toBottomOf="@id/tvPairingFood"
+            android:text="@string/ingredientes"
+            android:gravity="center"
+
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/tvMaltLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/tvDescription"
+
+            app:layout_constraintTop_toBottomOf="@+id/tvIngredients"
+            android:text="@string/malt" />
+
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/tvMalt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tvDescription"
+
+            app:layout_constraintTop_toBottomOf="@+id/tvMaltLabel"
+            tools:text="malta3 " />
+
+
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/tvHopsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/tvDescription"
+
+            app:layout_constraintTop_toBottomOf="@+id/tvMalt"
+            android:text="@string/hops" />
+
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/tvHops"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tvDescription"
+
+            app:layout_constraintTop_toBottomOf="@+id/tvHopsLabel"
+            tools:text="lupulo " />
+
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/tvYeastLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/tvDescription"
+
+            app:layout_constraintTop_toBottomOf="@+id/tvHops"
+            android:text="@string/yeast" />
+
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/tvYeast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="32dp"
+
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tvDescription"
+
+            app:layout_constraintTop_toBottomOf="@+id/tvYeastLabel"
+            tools:text="levadura " />
+
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
